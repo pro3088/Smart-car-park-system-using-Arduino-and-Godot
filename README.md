@@ -1,2 +1,2 @@
-# car-park-path-finding-android-app
+# Smart-car-park-system-using-Arduino-and-Godot
 This is an app for a smart-parking system

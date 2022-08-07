@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/main.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = 2.0
+margin_right = 480.0
+margin_bottom = 1311.0
+color = Color( 0.937255, 0.603922, 0.603922, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 168.0
+margin_top = 70.0
+margin_right = 302.0
+margin_bottom = 474.0
+custom_constants/separation = 350
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 134.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SMART CAR PARK"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 364.0
+margin_right = 134.0
+margin_bottom = 454.0
+custom_constants/separation = 50
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer"]
+margin_right = 134.0
+margin_bottom = 20.0
+text = "park you car"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer"]
+margin_top = 70.0
+margin_right = 134.0
+margin_bottom = 90.0
+text = "settings"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

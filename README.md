@@ -127,7 +127,7 @@ void IRsensor(){
     sprintf(str, "%u,%u,%u,%u", reply[0],reply[1],reply[2],reply[3]);
 }
 ```
-a method named IR sensors was created in the arduino code to handle the sensors input, the data is then sent to the nodemcu in f format (ascii)
+A method named IR sensors was created in the arduino code to handle the sensors input, the data is then sent to the nodemcu in f format (ascii).
 
 ###Nodemcu
 
